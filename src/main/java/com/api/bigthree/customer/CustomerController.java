@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "api/v1/customer")
+@RequestMapping(path = "api/v1/customers")
 public class CustomerController {
     private static final List<Customer> CUSTOMERS = List.of(
             new Customer(1L, "jaho", "doe", "Bon@red.com"),
