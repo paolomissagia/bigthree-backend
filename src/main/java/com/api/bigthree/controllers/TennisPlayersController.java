@@ -3,12 +3,10 @@ package com.api.bigthree.controllers;
 import com.api.bigthree.models.TennisPlayer;
 import com.api.bigthree.repository.TennisPlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin
 @RequestMapping(path = "api/v1/tennisplayers")
 public class TennisPlayersController {
 
