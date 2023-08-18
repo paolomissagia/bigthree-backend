@@ -7,5 +7,5 @@ RUN mvn clean package -DskipTests
 # Package stage
 FROM openjdk:19
 COPY --from=build /target/bigthree-0.0.1-SNAPSHOT.jar bigthree.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","bigthree.jar"]
 EXPOSE 8080
